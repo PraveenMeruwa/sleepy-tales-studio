@@ -1,0 +1,21 @@
+{
+  "studio": {
+    "name": "Sleepy Tales Studio",
+    "version": "1.0"
+  },
+  "architect": {
+    "minimum_version": "1.0",
+    "compatibility": "forward"
+  },
+  "governance": {
+    "constitution": "studio/constitution/Constitution.md",
+    "manuals_root": "studio/manuals/"
+  },
+  "projects": {
+    "root": "storyworlds/"
+  },
+  "build": {
+    "landing_template": "studio/templates/storyworld-template.html",
+    "default_branch": "main"
+  }
+}
