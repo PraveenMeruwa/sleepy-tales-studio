@@ -9,8 +9,8 @@
     "compatibility": "forward"
   },
   "governance": {
-    "constitution": "studio/constitution/Constitution.md",
-    "manuals_root": "studio/manuals/"
+    "constitution": "constitution/Constitution.md",
+    "manuals_root": "manual/"
   },
   "projects": {
     "root": "storyworlds/"
