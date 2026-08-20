@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lost Colony of Roanoke | Sleepy Tales Studio</title>
+  <meta name="description" content="An immersive Story World exploring the Lost Colony of Roanoke through the emotional viewpoints of Hope, Longing, and Acceptance.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="theme-atmospheric">
+
+  <!-- TOP HEADER / STUDIO BAR -->
+  <header class="studio-nav">
+    <div class="nav-container">
+      <div class="studio-brand">
+        <span class="studio-logo-icon">✦</span>
+        <span class="studio-title">SLEEPY TALES STUDIO</span>
+        <span class="badge beta-badge">Story World • Beta 2.0</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#prologue">First Glimpse</a>
+        <a href="#perspectives">Perspectives</a>
+        <a href="#narrative">Narrative</a>
+        <a href="#geography">Geography</a>
+        <a href="#theories">Theories</a>
+        <a href="#provenance">Studio Archive</a>
+      </nav>
+      <div class="audio-control-wrapper">
+        <button id="ambience-toggle" class="btn-ambience" aria-label="Toggle Atmosphere Audio">
+          <span class="sound-wave-icon">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span id="ambience-label">Soundscape: Off</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION / FIRST GLIMPSE -->
+  <section id="prologue" class="hero-section">
+    <div class="hero-backdrop"></div>
+    <div class="hero-particles" id="particles-container"></div>
+    <div class="hero-content">
+      <div class="hero-tagline">
+        <span class="eyebrow">Book I • Historical Mystery • 1587</span>
+      </div>
+      <h1 class="hero-title">THE LOST COLONY<br><span class="hero-subhead">OF ROANOKE</span></h1>
+      <p class="hero-first-glimpse">
+        “On the edge of an unfamiliar continent, hope arrived by sea and settled among whispering pines. 
+        Three years later, only a single carved word remained.”
+      </p>
+      
+      <div class="hero-meta-strip">
+        <div class="meta-item">
+          <span class="meta-label">Setting</span>
+          <span class="meta-value">Roanoke Island, Outer Banks</span>
+        </div>
+        <div class="meta-separator">•</div>
+        <div class="meta-item">
+          <span class="meta-label">Emotional Arc</span>
+          <span class="meta-value">Hope → Longing → Acceptance</span>
+        </div>
+        <div class="meta-separator">•</div>
+        <div class="meta-item">
+          <span class="meta-label">Pipeline Stage</span>
+          <span class="meta-value">Stage 4: Beta Production</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#perspectives" class="btn-primary">Explore the Perspectives</a>
+        <a href="#narrative" class="btn-secondary">Unfold the 5 Acts</a>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span class="scroll-text">Descend Into the Mystery</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: STUDIO INTENTION & ETHOS -->
+  <section class="section-intro container">
+    <div class="intro-grid">
+      <div class="intro-quote-card">
+        <blockquote>
+          “What if stories could become places people could enter, rather than simply narratives they consume?”
+        </blockquote>
+        <cite>— Sleepy Tales Studio Founding Principle</cite>
+      </div>
+      <div class="intro-text">
+        <span class="section-kicker">Genesis & Purpose</span>
+        <h2>Beyond the Sensational: A Story of Human Truth</h2>
+        <p>
+          For centuries, the disappearance of the 115 English colonists in 1587 has been treated as a sensational riddle. 
+          Sleepy Tales Studio approaches Roanoke not as an unsolved ghost story, but as an enduring human drama of family, 
+          unforgiving oceanic distance, fragile beginnings, and the quiet resilience of memory.
+        </p>
+        <p>
+          Following the Studio’s <strong>Narrative Architecture</strong> and <strong>Visual Language</strong> standards, 
+          this Story World is built upon verified historical research, structured around three deeply human viewpoints, and 
+          crafted with quiet atmospheric restraint.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE THREE EMOTIONAL PERSPECTIVES -->
+  <section id="perspectives" class="section-perspectives">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Emotional Framework</span>
+        <h2>The Triad of Viewpoints</h2>
+        <p class="section-lead">The narrative of Roanoke unfolds through three interconnected lenses of human feeling.</p>
+      </div>
+
+      <!-- PERSPECTIVE SELECTOR BUTTONS -->
+      <div class="perspective-tabs" role="tablist">
+        <button class="perspective-tab active" data-perspective="virginia" role="tab" aria-selected="true">
+          <span class="tab-number">01</span>
+          <span class="tab-name">Virginia Dare</span>
+          <span class="tab-emotion">Perspective: Hope</span>
+        </button>
+        <button class="perspective-tab" data-perspective="john" role="tab" aria-selected="false">
+          <span class="tab-number">02</span>
+          <span class="tab-name">John White</span>
+          <span class="tab-emotion">Perspective: Longing</span>
+        </button>
+        <button class="perspective-tab" data-perspective="thomasine" role="tab" aria-selected="false">
+          <span class="tab-number">03</span>
+          <span class="tab-name">Thomasine White</span>
+          <span class="tab-emotion">Perspective: Acceptance</span>
+        </button>
+      </div>
+
+      <!-- PERSPECTIVE CARD DISPLAY -->
+      <div class="perspective-viewport">
+        <!-- VIRGINIA DARE (HOPE) -->
+        <div class="perspective-panel active" id="panel-virginia" role="tabpanel">
+          <div class="panel-layout">
+            <div class="panel-visual">
+              <div class="visual-frame">
+                <div class="symbolic-illustration hope-motif">
+                  <div class="glow-orb"></div>
+                  <div class="pine-silhouette"></div>
+                  <div class="cradle-mark">✦</div>
+                </div>
+                <div class="visual-caption">Born 18 August 1587 • Roanoke Island</div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="character-designation">
+                <span class="badge">The First Dawn</span>
+                <span class="theme-tag">Theme: Fragile Beginnings & Wonder</span>
+              </div>
+              <h3>Virginia Dare</h3>
+              <p class="character-role">The first English child born in the Americas. Daughter of Eleanor Dare, granddaughter of Governor John White.</p>
+              <div class="monologue-box">
+                <p>
+                  “I knew neither the crowded docks of London nor the crown’s grand ambition. 
+                  My world was the rush of coastal winds, the smell of cedar resin, the taste of salt on my mother’s skin, 
+                  and the wide, uncharted sky. I was the promise that this soil could cradle life.”
+                </p>
+              </div>
+              <ul class="key-attributes">
+                <li><strong>Emotional Core:</strong> Unspoiled innocence, raw curiosity, and the arrival of a new generation on the wild continent.</li>
+                <li><strong>Historical Anchor:</strong> Christened on Sunday, 24 August 1587; recorded faithfully in Governor White’s journal.</li>
+                <li><strong>Narrative Function:</strong> Represents the future that every settler fought to protect.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- JOHN WHITE (LONGING) -->
+        <div class="perspective-panel" id="panel-john" role="tabpanel" hidden>
+          <div class="panel-layout">
+            <div class="panel-visual">
+              <div class="visual-frame">
+                <div class="symbolic-illustration longing-motif">
+                  <div class="compass-ring"></div>
+                  <div class="ocean-waves"></div>
+                  <div class="lantern-mark">⚲</div>
+                </div>
+                <div class="visual-caption">Governor, Artist, Cartographer • 1540–1593</div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="character-designation">
+                <span class="badge">The Severed Return</span>
+                <span class="theme-tag">Theme: Distance, Regret & Duty</span>
+              </div>
+              <h3>John White</h3>
+              <p class="character-role">Governor of the 1587 Colony, acclaimed watercolorist, father to Eleanor, grandfather to Virginia.</p>
+              <div class="monologue-box">
+                <p>
+                  “Three years I was marooned by war and storm in England, clutching sketches of flora and child while the Atlantic 
+                  roared between us. When at last I stepped onto that shore in 1590, the torches illuminated empty clearings, 
+                  overgrown trenches, and the five carved letters of CROATOAN. No cross of distress was cut into the bark—only the silence.”
+                </p>
+              </div>
+              <ul class="key-attributes">
+                <li><strong>Emotional Core:</strong> The torment of paternal duty obstructed by global war (the Spanish Armada).</li>
+                <li><strong>Historical Anchor:</strong> Left Roanoke on 27 August 1587 for supplies; returned 18 August 1590 on his granddaughter’s third birthday.</li>
+                <li><strong>Narrative Function:</strong> The observational eye bridging European ambition and colonial abandonment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- THOMASINE WHITE (ACCEPTANCE) -->
+        <div class="perspective-panel" id="panel-thomasine" role="tabpanel" hidden>
+          <div class="panel-layout">
+            <div class="panel-visual">
+              <div class="visual-frame">
+                <div class="symbolic-illustration acceptance-motif">
+                  <div class="hearth-glow"></div>
+                  <div class="window-frame"></div>
+                  <div class="quill-mark">✒</div>
+                </div>
+                <div class="visual-caption">Remained in England • St. Dunstan-in-the-West</div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="character-designation">
+                <span class="badge">The Anchor Left Behind</span>
+                <span class="theme-tag">Theme: Memory, Grief & Acceptance</span>
+              </div>
+              <h3>Thomasine White</h3>
+              <p class="character-role">Wife of John White, mother of Eleanor, watching the ships vanish beyond the horizon from London.</p>
+              <div class="monologue-box">
+                <p>
+                  “Men build empires in parchment and lead; women tend the quiet empty rooms they leave in their wake. 
+                  I watched my daughter sail into the setting sun, and when John returned alone with ink-stained hands and hollow eyes, 
+                  I understood: what the ocean claims, love must hold in silence.”
+                </p>
+              </div>
+              <ul class="key-attributes">
+                <li><strong>Emotional Core:</strong> The quiet dignity of enduring grief and releasing the demand for impossible answers.</li>
+                <li><strong>Historical Anchor:</strong> The domestic reality in 16th-century London that bore the cost of exploration.</li>
+                <li><strong>Narrative Function:</strong> Grounding the Story World in emotional resolution and philosophical acceptance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FIVE-ACT NARRATIVE ARCHITECTURE -->
+  <section id="narrative" class="section-narrative">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Narrative Architecture</span>
+        <h2>The Five-Act Reflective Journey</h2>
+        <p class="section-lead">A deliberate structure balancing historical chronology with emotional contemplation.</p>
+      </div>
+
+      <div class="timeline-accordion">
+        <!-- ACT 1 -->
+        <div class="act-card active" data-act="1">
+          <div class="act-header">
+            <div class="act-number">Act I</div>
+            <div class="act-title-wrap">
+              <h3>The Edge of the Unknown</h3>
+              <span class="act-subtitle">Arrival at Roanoke Island • July 1587</span>
+            </div>
+            <span class="act-icon">▾</span>
+          </div>
+          <div class="act-content">
+            <p>
+              Three vessels navigate the shallow shoals of Hatarask into the sound. 115 men, women, and children establish homes 
+              amidst the remnants of previous military outposts. The initial wonder of the maritime forest meets the harsh realization 
+              of isolation.
+            </p>
+            <div class="act-meta">
+              <span class="act-theme-pill">Atmosphere: Expectation & Sea Fog</span>
+              <span class="act-viewpoint-pill">Primary Lens: Hope</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACT 2 -->
+        <div class="act-card" data-act="2">
+          <div class="act-header">
+            <div class="act-number">Act II</div>
+            <div class="act-title-wrap">
+              <h3>A Fragile Spark</h3>
+              <span class="act-subtitle">The Birth of Virginia Dare • August 1587</span>
+            </div>
+            <span class="act-icon">▾</span>
+          </div>
+          <div class="act-content">
+            <p>
+              In a timber cottage surrounded by coastal pines, Eleanor Dare gives birth. The christening becomes a communal benediction. 
+              Yet supplies dwindle, diplomatic ties with neighboring tribes fracture, and Governor White is pleaded with to return to England for urgent relief.
+            </p>
+            <div class="act-meta">
+              <span class="act-theme-pill">Atmosphere: Intimate Warmth & Impending Shadow</span>
+              <span class="act-viewpoint-pill">Primary Lens: Virginia & Eleanor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACT 3 -->
+        <div class="act-card" data-act="3">
+          <div class="act-header">
+            <div class="act-number">Act III</div>
+            <div class="act-title-wrap">
+              <h3>The Severing Sea</h3>
+              <span class="act-subtitle">The Spanish Armada & Three Years of Silence • 1588–1589</span>
+            </div>
+            <span class="act-icon">▾</span>
+          </div>
+          <div class="act-content">
+            <p>
+              England is gripped by mortal conflict as King Philip’s armada threatens invasion. Every seaworthy vessel is requisitioned. 
+              Across thousands of miles of cold Atlantic waves, John White waits in agony while the colonists adapt, endure droughts, and make their fateful choice.
+            </p>
+            <div class="act-meta">
+              <span class="act-theme-pill">Atmosphere: Desperation & Oceanic Vastness</span>
+              <span class="act-viewpoint-pill">Primary Lens: Longing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACT 4 -->
+        <div class="act-card" data-act="4">
+          <div class="act-header">
+            <div class="act-number">Act IV</div>
+            <div class="act-title-wrap">
+              <h3>The Return to Silence</h3>
+              <span class="act-subtitle">The Deserted Settlement • August 1590</span>
+            </div>
+            <span class="act-icon">▾</span>
+          </div>
+          <div class="act-content">
+            <p>
+              White lands under the gathering tempest of hurricane season. He finds the palisade standing, houses dismantled with orderly purpose, 
+              and chest-boxes ransacked by time and sand. On a dominant wooden post: <strong>CROATOAN</strong>. On a tree by the shore: <strong>CRO</strong>. 
+              No Maltese cross of distress.
+            </p>
+            <div class="act-meta">
+              <span class="act-theme-pill">Atmosphere: Wind, Rustling Leaves & Melancholy</span>
+              <span class="act-viewpoint-pill">Primary Lens: John White</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACT 5 -->
+        <div class="act-card" data-act="5">
+          <div class="act-header">
+            <div class="act-number">Act V</div>
+            <div class="act-title-wrap">
+              <h3>The Living Forest</h3>
+              <span class="act-subtitle">Memory & The Tapestry of Assimilation</span>
+            </div>
+            <span class="act-icon">▾</span>
+          </div>
+          <div class="act-content">
+            <p>
+              The narrative dissolves the myth of a supernatural void. The settlers did not vanish into thin air; they stepped into 
+              the living landscape of indigenous hospitality and blended ancestry. What began in ambition settles into quiet endurance.
+            </p>
+            <div class="act-meta">
+              <span class="act-theme-pill">Atmosphere: Reverence & Serenity</span>
+              <span class="act-viewpoint-pill">Primary Lens: Acceptance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CARTOGRAPHY & GEOGRAPHY -->
+  <section id="geography" class="section-geography">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Geography & Setting</span>
+        <h2>The Coastal Tapestry</h2>
+        <p class="section-lead">The landscape of sounds, barrier islands, and maritime forests that shaped survival.</p>
+      </div>
+
+      <div class="geo-layout">
+        <div class="geo-map-container">
+          <div class="svg-map-frame">
+            <svg viewBox="0 0 800 500" class="historical-map-svg" aria-label="Map of Roanoke Island and Outer Banks">
+              <defs>
+                <radialGradient id="waterGrad" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#14212e"/>
+                  <stop offset="100%" stop-color="#0a0f16"/>
+                </radialGradient>
+                <linearGradient id="landGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#24342f"/>
+                  <stop offset="100%" stop-color="#192420"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="500" fill="url(#waterGrad)"/>
+              
+              <!-- Water Sound Labels -->
+              <text x="220" y="80" class="map-water-label">ALBEMARLE SOUND</text>
+              <text x="260" y="440" class="map-water-label">PAMLICO SOUND</text>
+              <text x="660" y="250" class="map-water-label">ATLANTIC OCEAN</text>
+              
+              <!-- Mainland Coastline -->
+              <path d="M 0,20 Q 80,100 120,200 T 150,380 T 80,500 L 0,500 Z" fill="url(#landGrad)" stroke="#3e5246" stroke-width="1.5"/>
+              <text x="40" y="260" class="map-land-label">MAINLAND (VIRGINIA / NC)</text>
+
+              <!-- Barrier Islands / Outer Banks -->
+              <path d="M 520,0 Q 560,120 540,240 T 490,420 T 440,500 L 460,500 Q 510,420 560,240 T 540,0 Z" fill="url(#landGrad)" stroke="#3e5246" stroke-width="1.5"/>
+              <text x="560" y="160" class="map-feature-label">Outer Banks Shoals</text>
+
+              <!-- Roanoke Island -->
+              <path d="M 330,160 Q 365,190 360,250 T 325,310 T 310,240 Z" fill="#2d4239" stroke="#d49b4b" stroke-width="2" class="pulse-land"/>
+              
+              <!-- Map POIs -->
+              <!-- Fort Raleigh -->
+              <circle cx="340" cy="180" r="6" fill="#d49b4b" class="poi-marker"/>
+              <text x="355" y="185" class="map-poi-text">Fort Raleigh / Settlement (1587)</text>
+
+              <!-- Croatoan Island (Hatteras) -->
+              <circle cx="495" cy="400" r="6" fill="#6b7f8c" class="poi-marker"/>
+              <text x="510" y="405" class="map-poi-text">Croatoan Island (Hatteras)</text>
+
+              <!-- Site X / Salmon Creek -->
+              <circle cx="110" cy="110" r="5" fill="#6b7f8c" class="poi-marker"/>
+              <text x="125" y="115" class="map-poi-text">Site X (Salmon Creek)</text>
+
+              <!-- Compass Rose -->
+              <g transform="translate(700, 80)">
+                <circle cx="0" cy="0" r="30" fill="none" stroke="#d49b4b" stroke-width="1" stroke-dasharray="2,2"/>
+                <line x1="0" y1="-38" x2="0" y2="38" stroke="#d49b4b" stroke-width="1.5"/>
+                <line x1="-38" y1="0" x2="38" y2="0" stroke="#d49b4b" stroke-width="1.5"/>
+                <polygon points="0,-35 4,-10 0,-15 -4,-10" fill="#d49b4b"/>
+                <text x="-4" y="-42" class="compass-n">N</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="geo-sidebar">
+          <div class="geo-card">
+            <h4>Roanoke Island</h4>
+            <p>Sheltered inside barrier sounds, 12 miles long and 3 miles wide. Dense with cedar, live oak, and loblolly pines.</p>
+          </div>
+          <div class="geo-card">
+            <h4>Croatoan (Hatteras) Island</h4>
+            <p>50 miles south along the Outer Banks, ancestral home of Manteo and the friendly Croatoan tribe.</p>
+          </div>
+          <div class="geo-card">
+            <h4>Site X (Albemarle Sound)</h4>
+            <p>Modern archaeological discovery at the head of Albemarle Sound, indicating sustained 16th-century European presence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: HISTORICAL THEORIES COMPARATOR -->
+  <section id="theories" class="section-theories">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">Research & Stewardship</span>
+        <h2>The Competing Hypotheses</h2>
+        <p class="section-lead">Faithful to historical evidence without claiming premature certainty.</p>
+      </div>
+
+      <div class="theories-grid">
+        <!-- Theory 1: Assimilation -->
+        <div class="theory-card featured">
+          <div class="theory-status-badge">Leading Academic Consensus</div>
+          <h3>1. Assimilation with the Croatoan</h3>
+          <p>
+            The settlers relocated 50 miles south to Croatoan Island (Hatteras), integrating peaceably into Native Algonquian communities. 
+            Subsequent generations of Lumbee and Hatteras peoples reported European ancestry, gray eyes, and shared oral histories.
+          </p>
+          <div class="theory-footer">
+            <span class="evidence-tag">Evidence: Carved name "CROATOAN", lack of distress cross, archaeological artifacts.</span>
+          </div>
+        </div>
+
+        <!-- Theory 2: Inland Migration -->
+        <div class="theory-card">
+          <div class="theory-status-badge">Archaeologically Supported</div>
+          <h3>2. Inland Migration to Site X</h3>
+          <p>
+            Factions moved westward up Albemarle Sound to Salmon Creek in Bertie County. Hidden patches on John White’s 1585 map 
+            revealed a concealed symbol of a planned inland fort.
+          </p>
+          <div class="theory-footer">
+            <span class="evidence-tag">Evidence: First Colony Foundation excavations of Border ware pottery.</span>
+          </div>
+        </div>
+
+        <!-- Theory 3: Severe Drought -->
+        <div class="theory-card">
+          <div class="theory-status-badge">Climatological Evidence</div>
+          <h3>3. The Mega-Drought of 1587–1589</h3>
+          <p>
+            Tree-ring analysis of baldcypress trees reveals that 1587 coincided with the worst three-year drought in 800 years, 
+            decimating local agriculture and forcing dispersion.
+          </p>
+          <div class="theory-footer">
+            <span class="evidence-tag">Evidence: Stahle et al. dendrochronological climate records (Science, 1998).</span>
+          </div>
+        </div>
+
+        <!-- Theory 4: Conflict or Spanish Action -->
+        <div class="theory-card">
+          <div class="theory-status-badge">Documented Context</div>
+          <h3>4. Conflict & Regional Displacement</h3>
+          <p>
+            Tensions with the Secotan tribe or privateer skirmishes may have driven splinter groups away from the coast. 
+            Spanish search fleets from St. Augustine looked for the colony but failed to locate it.
+          </p>
+          <div class="theory-footer">
+            <span class="evidence-tag">Evidence: Spanish colonial archives & Ralph Lane’s previous military records.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: SENSORY & AUDIO LANGUAGE -->
+  <section class="section-sensory">
+    <div class="container">
+      <div class="sensory-box">
+        <div class="sensory-text">
+          <span class="section-kicker">Audio & Visual Language</span>
+          <h2>The Sonic and Visual Palette</h2>
+          <p>
+            Sleepy Tales Studio crafts immersive environments through subtle sensory cues rather than aggressive spectacle.
+          </p>
+          <div class="palette-swatches">
+            <div class="swatch" style="background:#6B7F8C" title="Sea Mist"><span>#6B7F8C<br>Sea Mist</span></div>
+            <div class="swatch" style="background:#1C2D27" title="Pine Forest"><span>#1C2D27<br>Pine Forest</span></div>
+            <div class="swatch" style="background:#3E3A37" title="Weathered Timber"><span>#3E3A37<br>Weathered Timber</span></div>
+            <div class="swatch" style="background:#D49B4B" title="Lantern Amber"><span>#D49B4B<br>Lantern Amber</span></div>
+            <div class="swatch" style="background:#0A0D12" title="Abyss Blue"><span>#0A0D12<br>Deep Sound</span></div>
+          </div>
+        </div>
+        <div class="sound-elements-card">
+          <h4>Studio Audio Principles</h4>
+          <ul>
+            <li><strong>Harbor Bells:</strong> Resonant, distant brass strokes marking passage and fog.</li>
+            <li><strong>Tidal Ambience:</strong> Rhythmic sound waves breaking against shallow salt shoals.</li>
+            <li><strong>Wind in Needles:</strong> High pine murmur representing isolation and nature reclaiming civilization.</li>
+            <li><strong>Silence:</strong> Intentional pauses providing space for reflection and awe.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: STUDIO METADATA & PROVENANCE -->
+  <footer id="provenance" class="studio-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="studio-brand">
+            <span class="studio-logo-icon">✦</span>
+            <span class="studio-title">SLEEPY TALES STUDIO</span>
+          </div>
+          <p class="footer-desc">
+            Transforming careful research into immersive Story Worlds that invite exploration, encourage reflection, and celebrate craftsmanship.
+          </p>
+          <p class="constitution-quote">
+            <em>“Stories may end. Story Worlds continue to grow.”</em>
+          </p>
+        </div>
+
+        <div class="footer-meta-col">
+          <h4>Project Architecture Record</h4>
+          <table class="meta-table">
+            <tr>
+              <td>Story World:</td>
+              <td><strong>Roanoke</strong></td>
+            </tr>
+            <tr>
+              <td>Genre:</td>
+              <td>Historical Mystery</td>
+            </tr>
+            <tr>
+              <td>Version:</td>
+              <td>Beta 2.0 (CSP Production)</td>
+            </tr>
+            <tr>
+              <td>Manifest:</td>
+              <td><code>storyworlds/Roanoke/STUDIO_METADATA/manifest.json</code></td>
+            </tr>
+            <tr>
+              <td>Governance:</td>
+              <td><code>constitution/Constitution.md</code></td>
+            </tr>
+            <tr>
+              <td>Status:</td>
+              <td><span class="status-indicator">●</span> Beta Build Verified</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Studio Frameworks</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#prologue">First Glimpse Philosophy</a></li>
+            <li><a href="#perspectives">Creative Storytelling Pipeline (CSP)</a></li>
+            <li><a href="#narrative">Narrative Architecture</a></li>
+            <li><a href="#geography">Story World Cartography</a></li>
+            <li><a href="#theories">Research & Evidence Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Sleepy Tales Studio. All Story World assets, narrative architectures, and research frameworks preserved in the Story Archive.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
